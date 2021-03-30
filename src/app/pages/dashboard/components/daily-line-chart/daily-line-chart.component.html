@@ -12,12 +12,13 @@
         <div class="chart-legend__icon light-blue"></div><span class="chart-legend__title">Desktop</span>
       </div>
     </div>
-
+    
     <mat-select class="chart-select" [(ngModel)]="selectedMatSelectValue" (selectionChange)="changedMatSelectionValue()">
       <mat-option [value]="matSelectFields.daily">Daily</mat-option>
       <mat-option [value]="matSelectFields.weekly">Weekly</mat-option>
       <mat-option [value]="matSelectFields.monthly">Monthly</mat-option>
     </mat-select>
+    <app-settings-menu></app-settings-menu>
   </mat-card-title>
 
   <mat-card-content class="chart__content">

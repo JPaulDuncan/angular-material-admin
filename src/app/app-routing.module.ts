@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { DashboardPageComponent } from './pages/dashboard/containers';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import {AuthGuard} from './pages/auth/guards';
+import { ProfilePageComponent } from './pages/profile/containers';
 
 const routes: Routes = [
   {
@@ -10,6 +11,12 @@ const routes: Routes = [
     pathMatch: 'full',
     canActivate: [AuthGuard],
     component: DashboardPageComponent
+  },
+  {
+    path: 'profile',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: ProfilePageComponent
   },
   {
     path: 'typography',

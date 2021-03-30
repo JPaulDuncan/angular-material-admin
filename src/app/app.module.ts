@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AuthModule } from './pages/auth/auth.module';
+import { ProfileModule } from './pages/profile/profile.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AuthModule } from './pages/auth/auth.module';
     SharedModule,
     AuthModule,
     DashboardModule,
+    ProfileModule,
     BrowserAnimationsModule,
     RouterModule,
     AppRoutingModule,
